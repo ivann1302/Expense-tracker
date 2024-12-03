@@ -7,7 +7,26 @@
     <title>Expensive tracker</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="expense-tracker">
+      <header class="expense-tracker__header">
+        <h1 class="expense-tracker__title">Expense Tracker</h1>
+      </header>
+
+      <main class="expense-tracker__main">
+        <form class="expense-tracker__form" id="expense-form">
+          <input type="text" class="expense-tracker__input expense-tracker__input--text" id="expense-name" placeholder="Expense Name" required>
+          <input type="number" class="expense-tracker__input expense-tracker__input--number" id="expense-amount" placeholder="Amount" required>
+          <button type="submit" class="expense-tracker__button">Add Expense</button>
+          <ul class="expense__tracker__list"></ul>
+          <div class="expense-tracker__total">
+            <span>Total:</span>
+            <span id="total-amount">$0.00</span>n id="total-amount">0</span>
+          </div>
+        </form>
+      </main>
+    </div>
+
+
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
