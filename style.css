@@ -1,3 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #35424a;
+}
 
+.expense-tracker {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #465963;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.expense-tracker__header {
+  background: #e6dc22;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+.expense-tracker__title {
+  margin: 0;
+  font-size: 24px;
+}
+.expense-tracker__main {
+  padding: 20px;
+}
+.expense-tracker__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.expense-tracker__input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.expense-tracker__input--text {
+  flex: 2;
+}
+.expense-tracker__input--number {
+  flex: 1;
+}
+.expense-tracker__button {
+  background: #e6dc22;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.expense-tracker__button:hover {
+  background: #d1c81f;
+}
+.expense-tracker__list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.expense-tracker__list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.expense-tracker__total {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=style.css.map */

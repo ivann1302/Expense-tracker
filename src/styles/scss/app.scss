@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #35424a;
+  }
+  
+  .expense-tracker {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #465963;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  
+    &__header {
+      background: #e6dc22;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+    }
+  
+    &__title {
+      margin: 0;
+      font-size: 24px;
+    }
+  
+    &__main {
+      padding: 20px;
+    }
+  
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    &__input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+  
+      &--text {
+        flex: 2;
+      }
+  
+      &--number {
+        flex: 1;
+      }
+    }
+  
+    &__button {
+      background: #e6dc22;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+  
+      &:hover {
+        background: #d1c81f;
+      }
+    }
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+  
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    &__total {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
